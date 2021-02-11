@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>registerPerson</servlet-name>
+        <servlet-class>controller.RegisterPerson</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>observePerson</servlet-name>
+        <servlet-class>controller.ObservePerson</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>removePerson</servlet-name>
+        <servlet-class>controller.RemovePerson</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>selectPerson</servlet-name>
+        <servlet-class>controller.SignInPerson</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updatePerson</servlet-name>
+        <servlet-class>controller.UpdatePerson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerPerson</servlet-name>
+        <url-pattern>/registerPerson.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>observePerson</servlet-name>
+        <url-pattern>/observePerson.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>removePerson</servlet-name>
+        <url-pattern>/removePerson.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>selectPerson</servlet-name>
+        <url-pattern>/selectPerson.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updatePerson</servlet-name>
+        <url-pattern>/updatePerson.do</url-pattern>
+    </servlet-mapping>
+</web-app>
